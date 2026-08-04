@@ -1,32 +1,14 @@
-import mainLogoCaliceImg from "./assets/calice_logo.jpg";
 import "./App.css";
-import { WinesHomeTable } from "./features/tables/wine-table/wine-table";
-import { winesMock } from "./data/wines_mock";
-function Header() {
-  return (
-    <header>
-      <img src={mainLogoCaliceImg} className="mainLogoCalice" height={250} />
-      <h1 id="mainTitle">E-COMMERCE Wine App</h1>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <p id="legalNote">© 2026 Wine App. All Rights Reserved.</p>
-    </footer>
-  );
-}
+import { Header } from "./components/header/header";
+import { Footer } from "./components/footer/footer";
+import { Home } from "./components/Home/Home";
 
 function App() {
-  const wines = winesMock;
   return (
     <div id="application">
       <Header />
       <main>
-        <h2> Questo ecommerce tratta di vini</h2>
-        <WinesHomeTable {...wines} />
+        <Home />
       </main>
       <Footer></Footer>
     </div>
