@@ -1,4 +1,6 @@
-import mainLogoCaliceImg from "./assets/calice_logo.jpg";
+import mainLogoCaliceImg from "../../assets/calice_logo.jpg";
+
+import "./header.css";
 export function Header() {
   return (
     <header>
