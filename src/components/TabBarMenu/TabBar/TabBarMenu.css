@@ -1,0 +1,10 @@
+menu {
+  display: flex; /* Dispone gli elementi in orizzontale */
+  flex-direction: row; /* Allinea da sinistra a destra */
+  gap: 12px; /* Spazio tra un pulsante e l'altro */
+  list-style: none; /* Rimuove i "dot" (pallini) dei <li> */
+  padding: 0;
+  margin: 0;
+  align-content: center;
+  justify-content: center;
+}
