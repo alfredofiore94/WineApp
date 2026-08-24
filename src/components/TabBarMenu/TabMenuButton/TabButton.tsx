@@ -22,6 +22,6 @@ export function TabButton({
   );
 }
 
-export function StringButton(label: string) {
-  return <button>{label}</button>;
+export function StringButton({ nomePulsante }: { nomePulsante: string }) {
+  return <button>{nomePulsante}</button>;
 }
