@@ -23,7 +23,7 @@ export function TabBarMenu() {
   return (
     <section>
       <menu>
-        <TabButton
+        {/* <TabButton
           buttonMenu={menuButtons[0]}
           isSelected={selectedId === menuButtons[0].id}
           onSelectMenuBtn={() => onClickButton(menuButtons[0].id)}
@@ -42,7 +42,14 @@ export function TabBarMenu() {
           buttonMenu={menuButtons[3]}
           isSelected={selectedId === menuButtons[3].id}
           onSelectMenuBtn={() => onClickButton(menuButtons[3].id)}
-        ></TabButton>
+        ></TabButton> */}
+        {menuButtons.map((menuButton) => (
+          <TabButton
+            buttonMenu={menuButton}
+            isSelected={selectedId === menuButton.id}
+            onSelectMenuBtn={() => onClickButton(menuButton.id)}
+          ></TabButton>
+        ))}
       </menu>
 
       {selectedId === 0 ? <Home /> : null}
